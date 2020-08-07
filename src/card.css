@@ -1,0 +1,135 @@
+.card {
+    border: 1px solid #e6e4e6;
+    padding: 24px;
+}
+
+.avatar {
+    height: 80px;
+    width: 80px;
+    min-width: 80px;
+    /*   background: rgb(2,0,36); */
+    /* background-image: url("https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"); */
+    background-size: cover;
+    /* position: center; */
+    border-radius: 100%;
+    /* align-self: center;
+	justify-self: center; */
+    margin: auto;
+}
+
+.flex-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-question-area {
+    border-left: 1px solid #e6e4e6;
+    width: 100%;
+    margin: 0 12px;
+    padding: 0 12px;
+}
+
+h3 {
+    margin: 8px 0;
+}
+
+p {
+    margin: 4px 0;
+}
+
+.score-area {
+    border: 1px solid #e6e4e6;
+    /*    padding : 0 24px; */
+}
+
+
+
+.score-area-title {
+    background-color: #e6e4e6;
+    padding: 12px 24px;
+    font-weight: bold;
+}
+
+.score {
+    background-color: #3ecea7;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+    color: #fff;
+    /* margin: 12px 24px; */
+
+}
+
+.score-wrapper {
+    border: 1px solid #e6e4e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-ask-question {
+    flex: 1;
+    padding: 0 12px;
+    margin-left: 12px;
+    border-left: 1px solid #e6e4e6;
+}
+
+.result-wrapper {
+    border: 1px solid #3ECEA7;
+    border-radius: 3px;
+    padding: 12px 24px;
+    background-color: #E4FBF8;
+    position: relative;
+}
+
+.result-wrapper h5 {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.result-wrapper p {
+    color: #649690;
+    font-weight: 600;
+    margin: 8px 0;
+
+}
+
+progress:after {
+    content: attr(value)'%';
+}
+
+.vote {
+    background-color: #DDBD2C;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+
+.status-display {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
