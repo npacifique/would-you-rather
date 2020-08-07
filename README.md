@@ -1,6 +1,6 @@
 ## Would You Rather ?
 
-The Would You Rather? Game let logged in users ask questions and answer questions in the form of Would you rather [option A] or [option B], keep track of answered, unanswered questions and track users' score based on created and answered question. 
+The Would You Rather? Game let logged in users ask and answer questions in the form of Would you rather [option A] or [option B], keep track of answered, unanswered questions and track users' score based on created and answered questions. 
 
 
 ## Functionality
