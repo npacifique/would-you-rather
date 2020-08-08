@@ -65,7 +65,7 @@ const mapStateToProps = ({users, questions})=>{
 }
 
 export default connect(mapStateToProps) (Leaderboard)
-//author={users[q[0].author]}
+
 
 
 
