@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react'
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
-import Questions from '../utils/unanswered'
+import Helper from '../utils/helper'
 import Card from './shared/Card'
 import Format from '../utils/Format'
 
@@ -45,14 +45,14 @@ class AnsweredUnAnswered extends Component {
         const {id} = this.props.login.user 
 
         //get question
-        const unansweredQuestion = Questions.unanswered(questions, id )
-        const answeredQuestion = Questions.answered(questions, id )
+        const unansweredQuestion = Helper.unanswered(questions, id )
+        const answeredQuestion = Helper.answered(questions, id )
 
         return(
             <div className="answer-command">
                 <div style={{display: "flex"}}>
-                    <div className="div-btn" style={{backgroundColor : !this.state.answered && "#3ecea7", color: !this.state.answered && "#FFF"}} onClick={this.handleAnswer}>UnAnswered</div>
-                    <div className="div-btn" style={{backgroundColor : this.state.answered && "#3ecea7", color: this.state.answered && "#FFF" }} onClick={this.handleUnAnswer}>Answered</div>
+                    <div className="div-btn" style={{backgroundColor : !this.state.answered && "#3ecea7", color: !this.state.answered && "#FFF", fontWeight : !this.state.answered && "bold"}} onClick={this.handleAnswer}>UnAnswered</div>
+                    <div className="div-btn" style={{backgroundColor : this.state.answered && "#3ecea7", color: this.state.answered && "#FFF" ,  fontWeight : this.state.answered && "bold" }} onClick={this.handleUnAnswer}>Answered</div>
                 </div>
                 <br />
                 

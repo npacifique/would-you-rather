@@ -29,8 +29,6 @@ export function handleLogOut(){
 
 export function handleLogin(user, users){
 
-    console.log('user : ', user);
-
     return (dispatch)=>{
         dispatch(showLoading())
         Auth.login(user, users).then(res =>{

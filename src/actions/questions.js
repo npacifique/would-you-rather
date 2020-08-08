@@ -40,10 +40,9 @@ export function handleSaveQuestion(question){
 
 export function handleSaveQuestionAnswer ({authedUser, qid, answer}){
     return(dispatch)=>{
-       
-        return API._saveQuestionAnswer({authedUser, qid, answer}).then(res =>{
+       dispatch(saveQuestionAnswer())
+        return API._saveQuestionAnswer({authedUser, qid, answer}).then(q =>{
             dispatch(handleGetQuestions())
-            dispatch(saveQuestionAnswer())
         })
     }
 }

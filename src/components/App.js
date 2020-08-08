@@ -14,7 +14,7 @@ class App extends Component{
         this.props.store.subscribe(()=>this.forceUpdate())
         const {loading} = this.props
         if(loading){
-			return <LoadingBar style={{ backgroundColor: '#00b5d6', height: '5px' }} />
+			return <LoadingBar style={{ backgroundColor: '#3ECEA7', height: '5px' }} />
 		}
 
         return(

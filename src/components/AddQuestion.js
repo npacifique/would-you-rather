@@ -19,8 +19,7 @@ class AddQuestion extends Component {
 			optionOneText : e.target["optionOne"].value, 
 			optionTwoText : e.target["optionTwo"].value, 
 			author : userId }
-
-		
+					
 		this.props.dispatch(handleSaveQuestion(question))
 
 		this.props.history.push('/')
